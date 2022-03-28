@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cuprum:wght@700&display=swap" rel="stylesheet">
-    <script src="./javascript.js"></script>
     <link rel="stylesheet" type="text/css" href="./styles.css" />
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <div class="container">
         <div class="item1">
@@ -26,10 +28,39 @@
 
         <div class="item2">title</div>
 
-        <div class="item3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere debitis repellat, praesentium fugiat corrupti nulla, deserunt molestias ullam libero accusamus autem inventore dolore eius mollitia veritatis doloribus ipsam placeat in dolores porro explicabo tempora enim atque eaque. Temporibus deserunt, repudiandae labore alias, laboriosam fuga, in reiciendis porro ipsa minima perspiciatis.</div>
-        
+        <div class="item3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere debitis repellat,
+            praesentium fugiat corrupti nulla, deserunt molestias ullam libero accusamus autem inventore dolore eius
+            mollitia veritatis doloribus ipsam placeat in dolores porro explicabo tempora enim atque eaque. Temporibus
+            deserunt, repudiandae labore alias, laboriosam fuga, in reiciendis porro ipsa minima perspiciatis.</div>
+
         <div class="item4">
-            <img class="banner" src="./images/banner.png" alt="banner">
+            <!-- Slider main container -->
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide"><img class="banner" src="./images/banner.png" alt="banner"></div>
+                    <div class="swiper-slide"><img class="banner" src="./images/banner2.png" alt="banner"></div>
+                    <div class="swiper-slide"><img class="banner" src="./images/banner3.png" alt="banner"></div>
+
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
+                <!-- If we need scrollbar -->
+                <div class="swiper-scrollbar"></div>
+            </div>
+            <!-- <img class="banner" src="./images/banner.png" alt="banner"> -->
         </div>
+
+
     </div>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./javascript.js"></script>
+</body>
+
 </html>
