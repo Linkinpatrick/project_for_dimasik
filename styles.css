@@ -1,0 +1,111 @@
+body {
+    margin: 0px;
+}
+
+.container {
+    font-size: 1.5em;
+    color: white;
+    min-height: 300px;
+    width: 100%;
+    background: #333031;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 50px 1fr 2fr;
+
+    grid-template-areas: 
+        "header header"
+        "product_name text"
+        "banner banner";
+
+
+}
+
+.item1 {
+    
+    grid-area: header;
+    display: grid;
+    grid-template-columns: 1fr 8fr 2fr 0.5fr 0.5fr;
+
+    
+    justify-items: stretch;
+    align-items: center;
+
+
+}
+
+.item2 {    
+    grid-area: product_name;
+    justify-self: center;
+    align-self: center;
+    font-size: 300px;
+    font-family: Cuprum;
+
+}
+
+.item3 {    
+    grid-area: text;
+    justify-self: center;
+    align-self: center;
+    margin: 50px;
+
+}
+
+
+.item4 {
+    
+    grid-area: banner;
+    /* justify-content: center; */
+    
+
+}
+
+.item1_company {
+    justify-self: center;
+    margin-left: 50px;
+    
+    
+
+}
+
+.item1_phone {
+    
+    justify-self: left;
+    margin-left: 50px;
+}
+
+.item1_language {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: space-around !important;
+
+}
+.item1_phone:hover, .item1_4:hover, .item1_5:hover {
+    background-color: #5d5d5d;
+
+
+}
+
+.icon {
+    width: 50px;
+    height: auto;
+}
+
+.banner {
+  max-width: 90%;
+  height: auto;
+  margin: auto;
+  display: block;
+}
+
+a:link {
+    text-decoration: none;
+    color: white;
+  }
+  
+a:visited {
+    text-decoration: none;
+ }
+
+a:hover {
+    background-color: #5d5d5d; 
+}
